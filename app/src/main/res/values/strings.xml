@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">CalculatorImc</string>
+    <string name="press_me">Presionar</string>
+    <string name="male">Hombre</string>
+    <string name="female">Mujer</string>
+    <string name="height">Altura</string>
+    <string name="weight">Peso</string>
+    <string name="age">Edad</string>
+    <string name="calculate">Calcular</string>
+    <string name="subtract">-</string>
+    <string name="plus">+</string>
 </resources>
