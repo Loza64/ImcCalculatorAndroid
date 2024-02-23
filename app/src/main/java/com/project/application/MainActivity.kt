@@ -1,5 +1,6 @@
 package com.project.application
 
+import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
@@ -48,7 +49,16 @@ class MainActivity : AppCompatActivity() {
 
         // Código a ejecutar cuando se hace clic en el botón "Aceptar"
         builder.setPositiveButton("Accept") { dialog, which ->
-            dialog.dismiss() // Cerrar el cuadro de diálogo
+            when (which) {
+                DialogInterface.BUTTON_POSITIVE -> {
+                    println("Se presionó el botón Aceptar")
+                    dialog.dismiss()
+                }
+                DialogInterface.BUTTON_NEGATIVE -> {
+                    println("Se presionó el botón Cancelar")
+                    dialog.dismiss()
+                }
+            }
         }
 
         val dialog = builder.create()
